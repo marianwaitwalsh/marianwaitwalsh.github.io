@@ -157,6 +157,7 @@ input[type=checkbox]:checked ~ #menu{
         background-size: cover;
 */
     }
+    /* mobile background fixed */
     #background_wrap {
         z-index: -1;
         position: fixed;
@@ -165,7 +166,7 @@ input[type=checkbox]:checked ~ #menu{
         height: 100%;
         width: 100%;
         background-size: 100%;
-        background-image: url(images/pic2.jpg);
+        background-image: url(images/pic4.jpg);
         background-attachment: fixed;
 /*        background-repeat: no-repeat;*/
     }
@@ -207,6 +208,7 @@ input[type=checkbox]:checked ~ #menu{
         margin: 30px 10px 30px 10px;
     }
 }
+
 /* Full screen size */
 @media screen and (min-width: 790px) {
     html, body {
@@ -304,7 +306,7 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 #main-text a {
-    color: #4169e1;
+    color: #428bca;
     text-decoration: none;
 }
 
@@ -322,9 +324,6 @@ input[type=checkbox]:checked ~ #menu{
     margin-bottom: 20px;
 }
 
-#main-content ul li a {
-    text-decoration: none;
-}
 
 small {
     font-size: 12px;
