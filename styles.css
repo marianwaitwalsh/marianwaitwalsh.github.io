@@ -12,12 +12,12 @@ body {
 	list-style-type:none;
 	margin:0;
 	padding:0;
-	position: absolute;
+    position: fixed;
 }
 
 /*Create a horizontal list with spacing*/
 #nav-bar li {
-	display:inline-block;
+	display: inline-block;
 	float: left;
 	margin-right: 1px;
 }
@@ -42,7 +42,7 @@ body {
 
 /*Style for dropdown links*/
 #nav-bar li:hover ul a {
-	background: #f3f3f3;
+	background: #ccc;
 	color: #2f3036;
 	height: 40px;
 	line-height: 40px;
@@ -86,20 +86,11 @@ body {
 	text-align: right;
 	padding: 5px 10px;
 	display: none;
+    font-size: 1.5em;
 }
 
 #nav-bar .fa-bars {
     padding-left:5px;   
-}
-
-#title {
-    margin-bottom:-33px;
-    margin-top:0px;
-    padding-top:8px;
-    text-align: center;
-    color: #fff;
-    font-size:1.2em;
-    font-weight: 400;
 }
 
 /*Hide checkbox*/
@@ -133,4 +124,26 @@ input[type=checkbox]:checked ~ #menu{
 	#nav-bar .show-menu {
 		display:block;
 	}
+}
+
+@media screen and (min-width: 760px) {
+    #first {
+        padding-top:50px;
+    }
+}
+
+
+footer {
+    clear: both;
+    text-align: center;
+    padding:5px;
+    background: #eee;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    
 }
