@@ -40,7 +40,7 @@ a {
 	line-height: 50px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
-	background: #2f3036;
+/*	background: #2f3036;*/
 	text-decoration: none;
 }
 
@@ -104,6 +104,14 @@ a {
 /*    color: #2a6496;*/
 }
 
+#home-button .fa {
+    margin-top: 10px;
+}
+
+#nav-bar #current a {
+    color: #888;
+}
+
 /*Hide checkbox*/
 input[type=checkbox]{
     display: none;
@@ -117,7 +125,7 @@ input[type=checkbox]:checked ~ #menu{
 
 /* Responsive Styles*/
 /* Mobile screen size */
-@media screen and (max-width : 760px){
+@media screen and (max-width : 790px){
 	/*Make dropdown links appear inline*/
 	#nav-bar ul {
 		position: static;
@@ -127,6 +135,9 @@ input[type=checkbox]:checked ~ #menu{
 	#nav-bar li {
 		margin-bottom: 1px;
 	}
+    #nav-bar li a {
+        background: #555;
+    }
 	/*Make all menu links full width*/
 	#nav-bar ul li, #nav-bar li a {
 		width: 100%;
@@ -149,16 +160,20 @@ input[type=checkbox]:checked ~ #menu{
         text-align: center;
         font-size: 1.2em;
     }
+    #main-content {
+        margin: 30px 10px 30px 10px;
+    }
 }
 /* Full screen size */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 790px) {
     #first {
         padding-top:50px;
     }
     .info-block {
         display: inline-block;
         width: 25%;
-        margin:100px 10px 100px 0;
+/*        max-width: 250px;*/
+        margin:100px 0px 100px 0;
     }
     #nav-bar > ul {
         margin-left: 10%;
@@ -168,15 +183,34 @@ input[type=checkbox]:checked ~ #menu{
     }
     #title {
         margin-left: 10%;
-        padding: 10px 10px 10px 0px;
+        padding: 10px 0px 10px 0px;
         font-family: cursive;
         font-size: 2em;
     }
     #mobile-title {
         display: none;
     }
+    #nav-bar li a {
+        background: #2f3036;
+    }
+    #main-content {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
+#contact a {
+    text-decoration: none;
+    color: #1E90FF;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#contact a:hover {
+    color: #ddd;
+}
 
 .info-block {
     padding:5px;
@@ -194,6 +228,47 @@ input[type=checkbox]:checked ~ #menu{
     color: #fff;
 }
 
+#main-content {
+    padding:5px;
+    border: 1px solid #333;
+    text-align: center;
+    background-color: rgba(200,200,200,.7);
+}
+
+#main-text {
+    padding: 10px;
+    border: 1px solid #333;
+    margin:4px;
+    background-color: #333;
+    color: #fff;
+}
+
+#main-text p {
+    text-align: left;
+}
+
+#main-text a {
+    color: #4169e1;
+    text-decoration: none;
+}
+
+#main-text a:hover {
+    color: #ddd;
+}
+
+#main-content ul {
+    text-align: left;
+    list-style-type: none;
+    padding:0px;
+}
+
+#main-content ul li {
+    margin-bottom: 20px;
+}
+
+#main-content ul li a {
+    text-decoration: none;
+}
 
 small {
     font-size: 12px;
@@ -209,9 +284,9 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #428bca;
+    color: #2a6496;
 }
 
 footer a:hover {
-    color: #2a6496;
+    color: #fff;
 }
