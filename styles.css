@@ -149,13 +149,11 @@ input[type=checkbox]:checked ~ #menu{
 /* Mobile screen size */
 @media screen and (max-width : 790px){
     html, body {
-        position: fixed;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        background: url(/images/pic2.jpg) no-repeat; 
-        background-size: 100% 100%;
-        background-position: center center;
+        background: url(images/pic2.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 	/*Make dropdown links appear inline*/
 	#nav-bar ul {
