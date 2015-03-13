@@ -1,5 +1,12 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+
 /*Strip the ul of padding and list styling*/
-ul {
+#nav-bar ul {
 	list-style-type:none;
 	margin:0;
 	padding:0;
@@ -7,14 +14,14 @@ ul {
 }
 
 /*Create a horizontal list with spacing*/
-li {
+#nav-bar li {
 	display:inline-block;
 	float: left;
 	margin-right: 1px;
 }
 
 /*Style for menu links*/
-li a {
+#nav-bar li a {
 	display:block;
 	min-width:140px;
 	height: 50px;
@@ -27,12 +34,12 @@ li a {
 }
 
 /*Hover state for top level links*/
-li:hover a {
+#nav-bar li:hover a {
 	background: #19c589;
 }
 
 /*Style for dropdown links*/
-li:hover ul a {
+#nav-bar li:hover ul a {
 	background: #f3f3f3;
 	color: #2f3036;
 	height: 40px;
@@ -40,43 +47,57 @@ li:hover ul a {
 }
 
 /*Hover state for dropdown links*/
-li:hover ul a:hover {
+#nav-bar li:hover ul a:hover {
 	background: #19c589;
 	color: #fff;
 }
 
 /*Hide dropdown links until they are needed*/
-li ul {
+#nav-bar li ul {
 	display: none;
 }
 
 /*Make dropdown links vertical*/
-li ul li {
+#nav-bar li ul li {
 	display: block;
 	float: none;
 }
 
 /*Prevent text wrapping*/
-li ul li a {
+#nav-bar li ul li a {
 	width: auto;
 	min-width: 100px;
 	padding: 0 20px;
 }
 
 /*Display the dropdown on hover*/
-ul li a:hover + .hidden, .hidden:hover {
+#nav-bar ul li a:hover + .hidden, #nav-bar .hidden:hover {
 	display: block;
 }
 
 /*Style 'show menu' label button and hide it by default*/
-.show-menu {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+#nav-bar .show-menu {
+	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	text-decoration: none;
 	color: #fff;
 	background: #19c589;
-	text-align: center;
-	padding: 10px 0;
+	text-align: right;
+	padding: 10px 10px;
 	display: none;
+    font-weight: 100;
+}
+
+#nav-bar .fa-bars {
+    padding-left:5px;   
+}
+
+#title {
+    margin-top: 12px;
+    margin-bottom:-30px;
+    text-align: center;
+    color: #fff;
+    font-size:1.2em;
+    font-weight: 400;
 }
 
 /*Hide checkbox*/
@@ -94,20 +115,20 @@ input[type=checkbox]:checked ~ #menu{
 
 @media screen and (max-width : 760px){
 	/*Make dropdown links appear inline*/
-	ul {
+	#nav-bar ul {
 		position: static;
 		display: none;
 	}
 	/*Create vertical spacing*/
-	li {
+	#nav-bar li {
 		margin-bottom: 1px;
 	}
 	/*Make all menu links full width*/
-	ul li, li a {
+	#nav-bar ul li, #nav-bar li a {
 		width: 100%;
 	}
 	/*Display 'show menu' link*/
-	.show-menu {
+	#nav-bar .show-menu {
 		display:block;
 	}
 }
