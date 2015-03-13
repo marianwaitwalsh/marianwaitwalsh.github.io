@@ -2,9 +2,15 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
+    font-size: 16px;
 }
 
-
+a {
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
+}
 
 
 /*Strip the ul of padding and list styling*/
@@ -12,7 +18,7 @@ body {
 	list-style-type:none;
 	margin:0;
 	padding:0;
-    position: fixed;
+    position: absolute;
 }
 
 /*Create a horizontal list with spacing*/
@@ -37,7 +43,7 @@ body {
 
 /*Hover state for top level links*/
 #nav-bar li:hover a {
-	background: #19c589;
+	background: #2a6496;
 }
 
 /*Style for dropdown links*/
@@ -50,7 +56,7 @@ body {
 
 /*Hover state for dropdown links*/
 #nav-bar li:hover ul a:hover {
-	background: #19c589;
+	background: #428bca;
 	color: #fff;
 }
 
@@ -81,8 +87,8 @@ body {
 #nav-bar .show-menu {
 	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	text-decoration: none;
-	color: #fff;
-	background: #19c589;
+	color: #333;
+	background-color: #DDD;
 	text-align: right;
 	padding: 5px 10px;
 	display: none;
@@ -124,6 +130,9 @@ input[type=checkbox]:checked ~ #menu{
 	#nav-bar .show-menu {
 		display:block;
 	}
+    #title {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 760px) {
@@ -132,6 +141,9 @@ input[type=checkbox]:checked ~ #menu{
     }
 }
 
+small {
+    font-size: 12px;
+}
 
 footer {
     clear: both;
@@ -142,8 +154,9 @@ footer {
 
 footer a {
     text-decoration: none;
+    color: #428bca;
 }
 
 footer a:hover {
-    
+    color: #2a6496;
 }
