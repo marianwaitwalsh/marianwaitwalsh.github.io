@@ -96,7 +96,8 @@ a {
 }
 
 #nav-bar .fa-bars {
-    padding-left:5px;   
+    padding-left:5px;  
+    color: #2a6496;
 }
 
 /*Hide checkbox*/
@@ -110,8 +111,8 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 
-/*Responsive Styles*/
-
+/* Responsive Styles*/
+/* Mobile screen size */
 @media screen and (max-width : 760px){
 	/*Make dropdown links appear inline*/
 	#nav-bar ul {
@@ -133,13 +134,40 @@ input[type=checkbox]:checked ~ #menu{
     #title {
         display: none;
     }
+    .info-block {
+        display: block;
+        margin:10px;
+    }
 }
-
+/* Full screen size */
 @media screen and (min-width: 760px) {
     #first {
         padding-top:50px;
     }
+    .info-block {
+        display: inline-block;
+        width: 25%;
+        margin:70px 10px 10px 0;
+    }
+    #nav-bar ul {
+        margin-left: 10%;
+    }
+    #practice-areas {
+        margin-left:10%;
+    }
+    #title {
+        margin-left: 10%;
+        padding: 10px;
+    }
 }
+
+
+.info-block {
+    padding:5px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
 
 small {
     font-size: 12px;
@@ -149,7 +177,7 @@ footer {
     clear: both;
     text-align: center;
     padding:5px;
-    background: #eee;
+    background: #ccc;
 }
 
 footer a {
