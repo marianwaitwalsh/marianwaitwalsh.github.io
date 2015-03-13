@@ -165,8 +165,9 @@ input[type=checkbox]:checked ~ #menu{
         height: 100%;
         width: 100%;
         background-size: 100%;
-        background-image: url(images/pic3.jpg);
+        background-image: url(images/pic2.jpg);
         background-attachment: fixed;
+/*        background-repeat: no-repeat;*/
     }
 	/*Make dropdown links appear inline*/
 	#nav-bar ul {
