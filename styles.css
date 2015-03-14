@@ -263,7 +263,7 @@ input[type=checkbox]:checked ~ #menu{
 
 #contact a {
     text-decoration: none;
-    color: #1E90FF;
+    color: #428bca;
     font-family: "Courier New", Courier, monospace;
 }
 
@@ -300,10 +300,16 @@ input[type=checkbox]:checked ~ #menu{
     margin:4px;
     background-color: #333;
     color: #fff;
+    font-weight: 300;
 }
 
 #main-text p, #main-text h4 {
     text-align: left;
+}
+
+#main-text h4 {
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 #main-text a {
