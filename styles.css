@@ -44,6 +44,7 @@ a {
 	margin:0;
 	padding:0;
     position: absolute;
+    z-index: 5;
 }
 
 /*Create a horizontal list with spacing*/
