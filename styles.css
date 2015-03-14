@@ -207,6 +207,11 @@ input[type=checkbox]:checked ~ #menu{
     #main-content {
         margin: 30px 10px 30px 10px;
     }
+    #main-content img {
+        width: 70%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 /* Full screen size */
@@ -301,6 +306,10 @@ input[type=checkbox]:checked ~ #menu{
     background-color: #333;
     color: #fff;
     font-weight: 300;
+}
+
+#main-text #centered-info {
+    text-align: center;
 }
 
 #main-text p, #main-text h4 {
