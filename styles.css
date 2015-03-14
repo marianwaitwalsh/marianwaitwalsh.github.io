@@ -61,7 +61,7 @@ a {
 	text-align: center;
 	line-height: 50px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #fff;
+	color: #ccc;
 /*	background: #2f3036;*/
 	text-decoration: none;
 }
@@ -82,7 +82,7 @@ a {
 /*Hover state for dropdown links*/
 #nav-bar li:hover ul a:hover {
 	background: #428bca;
-	color: #fff;
+	color: #ccc;
 }
 
 /*Hide dropdown links until they are needed*/
@@ -122,7 +122,7 @@ a {
 
 #nav-bar .fa-bars {
     padding-left:5px;  
-    color:#fff;
+    color:#ccc;
 /*    color: #2a6496;*/
 }
 
@@ -198,11 +198,33 @@ input[type=checkbox]:checked ~ #menu{
         margin: 30px 10px 30px 10px;
     }
     #mobile-title {
-        color:#fff;
+        color:#ccc;
         margin-bottom: -35px;
         padding-top:10px;
         text-align: center;
         font-size: 1.2em;
+    }
+    #mobile-main-title {
+        padding-left: 15px;
+        padding-bottom: 10px;
+        width: 100%;
+        background-color: rgba(200,200,200,.7);
+    }
+    #mobile-main-title h4 {
+        font-family: cursive;
+        font-size: 2em;
+        padding:0;
+        margin:0;
+    }
+    #mobile-main-title h3 {
+        font-weight: normal;
+        margin-top: -5px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    #mobile-main-title p {
+        margin: 0;
+        padding: 0;
     }
     #main-content {
         margin: 30px 10px 30px 10px;
@@ -239,12 +261,30 @@ input[type=checkbox]:checked ~ #menu{
         margin-left:10%;
     }
     #title {
-        margin-left: 10%;
-        padding: 10px 0px 10px 0px;
+        background-color: rgba(200,200,200,.7);
+        padding-left: 10%;
+        padding-bottom: 10px;
+        margin: 0 0 20px 0;
+    }
+    #title h4 {
+        margin: 0;
+        padding: 0;
         font-family: cursive;
         font-size: 2em;
     }
+    #title h3 {
+        font-weight: normal;
+        margin: -5px 0 0px 0;
+        padding: 0;
+    }
+    #title p {
+        margin: 0;
+        padding: 0;
+    }
     #mobile-title {
+        display: none;
+    }
+    #mobile-main-title {
         display: none;
     }
     #nav-bar li a {
@@ -274,10 +314,6 @@ input[type=checkbox]:checked ~ #menu{
     font-family: "Courier New", Courier, monospace;
 }
 
-#contact p a:hover {
-    color: #ddd;
-}
-
 .info-block {
     padding:5px;
     border: 1px solid #333;
@@ -295,16 +331,12 @@ input[type=checkbox]:checked ~ #menu{
     transition: color 500ms;
 }
 
-#attorneys > p > a:hover {
-    color: #fff;
-}
-
 .info-block p {
     padding: 10px;
     border: 1px solid #333;
     margin:4px;
     background-color: #333;
-    color: #fff;
+    color: #ccc;
     font-weight: 300;
 /*    opacity: .8;*/
 }
@@ -325,39 +357,57 @@ input[type=checkbox]:checked ~ #menu{
     background-color: rgba(200,200,200,.7);
 }
 
-#main-text {
+.main-text {
     padding: 10px;
     border: 1px solid #333;
     margin:4px;
     background-color: #333;
-    color: #fff;
-    font-weight: 300;
+    color: #ccc;
+    font-weight: 200;
+/*    letter-spacing: 1px;*/
 /*    opacity: .8;*/
 }
 
-#main-text #centered-info {
+.main-text #centered-info {
     text-align: center;
 }
 
-#main-text p, #main-text h4 {
+.main-text p, #main-text h4 {
     text-align: left;
 }
 
-#main-text h4 {
+.main-text h4 {
     text-transform: uppercase;
     font-weight: 400;
 }
 
-#main-text a {
-    color: #428bca;
+.main-text a {
+    padding: 3px;
+    color: #ccc;
     text-decoration: none;
 }
 
-#main-text a:hover {
-    color: #ddd;
+.main-text a:hover {
+    background-color: #2a6496;
 }
 
-#main-content ul {
+.main-text ul {
+    text-align: left;
+    padding:0px;
+    padding-left: 20px;
+}
+
+#attorneys .main-text ul {
+    padding: 0;
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+#attorneys .main-text ul li {
+    margin: 5px 0;
+}
+
+.main-content ul {
     text-align: left;
 /*    list-style-type: none;*/
     padding:0px;
@@ -372,6 +422,22 @@ input[type=checkbox]:checked ~ #menu{
     margin-bottom: 20px;
 }
 
+#small-pic-list {
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#small-pic-list li {
+    display: inline-block;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#small-pic-list li img {
+    width: 40px;
+    border: 2px solid white;
+}
 
 small {
     font-size: 12px;
