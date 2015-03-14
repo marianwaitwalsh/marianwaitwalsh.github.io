@@ -244,6 +244,7 @@ input[type=checkbox]:checked ~ #menu{
     }
     #nav-bar li a {
         background: #2f3036;
+/*        background: #333;*/
     }
     #main-content {
         margin-top: 100px;
@@ -301,7 +302,7 @@ input[type=checkbox]:checked ~ #menu{
     color: #fff;
 }
 
-#main-text p {
+#main-text p, #main-text h4 {
     text-align: left;
 }
 
@@ -316,11 +317,16 @@ input[type=checkbox]:checked ~ #menu{
 
 #main-content ul {
     text-align: left;
-    list-style-type: none;
+/*    list-style-type: none;*/
     padding:0px;
+    padding-left: 20px;
 }
 
-#main-content ul li {
+#main-content ol {
+    text-align: left;
+}
+
+#main-content li {
     margin-bottom: 20px;
 }
 
