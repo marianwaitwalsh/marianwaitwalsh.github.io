@@ -262,9 +262,11 @@ input[type=checkbox]:checked ~ #menu{
         display: none;
     }
 }
+/*
 @media (max-width: @iphone-screen) {
         background-attachment: scroll;
 }
+*/
 
 #contact p a {
     text-decoration: none;
