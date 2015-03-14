@@ -450,6 +450,14 @@ small {
     font-size: 12px;
 }
 
+.logo {
+    font-family: 'Carnegie', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#map:hover {
+    background-color: #333;
+}
+
 footer {
     clear: both;
     text-align: center;
