@@ -266,13 +266,13 @@ input[type=checkbox]:checked ~ #menu{
         background-attachment: scroll;
 }
 
-#contact a {
+#contact p a {
     text-decoration: none;
     color: #428bca;
     font-family: "Courier New", Courier, monospace;
 }
 
-#contact a:hover {
+#contact p a:hover {
     color: #ddd;
 }
 
@@ -284,12 +284,34 @@ input[type=checkbox]:checked ~ #menu{
     background-color: rgba(200,200,200,.7);
 }
 
+#attorneys > p > a {
+    color: #428bca;
+    text-decoration: none;
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
+}
+
+#attorneys > p > a:hover {
+    color: #fff;
+}
+
 .info-block p {
     padding: 2px;
     border: 1px solid #333;
     margin:4px;
     background-color: #333;
     color: #fff;
+}
+
+.info-block h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+#contact h3 a {
+    color: black;
 }
 
 #main-content {
