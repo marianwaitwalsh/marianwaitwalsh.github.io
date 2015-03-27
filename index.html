@@ -26,6 +26,17 @@
     
     <body>
         
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        
         <div id="title"><h4>Walsh <em>&</em> Walsh, LLP</h4>
         <h3>ATTORNEYS AT LAW</h3>
         <p>42 Long Alley, Saratoga Springs, NY 12866 | (518) 583-0171</p></div>
@@ -135,6 +146,9 @@
             <small>Attorney advertising.  This information is intended to be general only and should not be taken as formal legal advice.  No attorney-client relationship is formed as a result of the provision of this information.</small>
             <br>
             <hr>
+            <div class="fb-like" data-href="https://www.facebook.com/walsh2law" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+            <br>
+            <br>
             <small>© 2015 <span class="logo">Walsh & Walsh, LLP</span> | Designed by <a href="http://epwalsh.com">Evan P. Walsh</a></small>
 
         </footer>

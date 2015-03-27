@@ -470,3 +470,7 @@ footer a {
 footer a:hover {
     color: black;
 }
+
+.fb-like {
+    padding-left:6%;
+}
