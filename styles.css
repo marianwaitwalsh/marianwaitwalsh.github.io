@@ -470,3 +470,7 @@ footer a {
 footer a:hover {
     color: black;
 }
+
+#disqus_thread {
+    padding:10px;
+}
