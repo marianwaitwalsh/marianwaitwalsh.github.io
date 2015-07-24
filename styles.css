@@ -241,6 +241,13 @@ input[type=checkbox]:checked ~ #menu{
         margin-left: 10%;
         margin-right: 10%;
     }
+    #map {
+        position: relative;
+        margin:auto;
+        width: 90%;
+        height: 0;
+        padding-bottom:60%;
+    }
 }
 
 /* Full screen size */
@@ -307,6 +314,13 @@ input[type=checkbox]:checked ~ #menu{
     }
     .back-to-top {
         display: none;
+    }
+    #map {
+        position: relative;
+        margin:auto;
+        width: 80%;
+        height: 0;
+        padding-bottom:40%;
     }
 }
 /*
@@ -450,13 +464,6 @@ small {
     font-family: 'Carnegie', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#map {
-    position: relative;
-    margin:auto;
-    width: 80%;
-    height: 0;
-    padding-bottom:40%;
-}
 
 footer {
     clear: both;
