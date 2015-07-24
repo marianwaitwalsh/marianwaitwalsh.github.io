@@ -13,6 +13,27 @@
         <meta name="description" content="General practice law firm in Saratoga Springs, NY with concentrations in real estate, banking, creditors’ rights, estate planning, business law, homeowners' and condominium associations, civil litigation, municipal finance, land use and zoning, title searches, title insurance, and probate.">
         <meta name="keywords" content="Walsh and Walsh, saratoga attorney, saratoga springs Lawyer, Saratoga Springs, New York, Saratoga, saratoga, saratoga springs, real estate,saratoga real estate, wills,saratoga wills, trusts, probate, litigation,new york litigation, condo, saratoga county, homeowners association,saratoga homeowners association, business, corporation, new york limited liability company, saratoga banking, collections, Glens Falls, Lake George, Clifton Park, home, buy, sell, divorce, environmental, Adirondack Park Agency, planning, saratoga zoning, attorney, new york insurance, creditors rights, appeals">
 
+        <!-- google map -->
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+          function initialize() {
+            var myLatlng = new google.maps.LatLng(43.0841812,-73.785424);
+            var mapOptions = {
+              zoom: 17,
+              center: myLatlng
+            }
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+            var marker = new google.maps.Marker({
+              position: myLatlng,
+              map: map,
+              title: 'Hello World!'
+            });     
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+
     </head>
     
     <body>
@@ -83,8 +104,8 @@
                 </div>
                 </div></p>
                 
-                <a href="https://www.google.com/maps/place/42+Long+Alley,+Saratoga+Springs,+NY+12866/data=!4m2!3m1!1s0x89de39d7a85a3a39:0x2ca3d4798c7dd8?sa=X&ei=H58DVZSOLoqkNrCcgvgH&ved=0CB0Q8gEwAA" id="map"><img src="images/map.png"/></a>
-                
+                <div id="map"></div>
+
                 <p>Parking: Park nearby on Walton St. or Woodlawn Ave., or in the municipal parking lot between Church St., Woodlawn Ave. and Walton St. (see map).</p>
                 
                 <h4>From the south</h4>
